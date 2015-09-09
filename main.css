@@ -108,7 +108,7 @@ html {
 
 .profilecard-header {
     background-color: #49515C;
-    background: url(/images/profile-header__background.jpg) center no-repeat;
+    background: url(./images/profile-header__background.jpg) center no-repeat;
     background-size: cover;
     min-height: 200px;
     padding-top: 40px;
