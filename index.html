@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="/maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" type="text/css" href="main.css">  
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <header class="header">
+                <div class="header__topbar row">
+                    <div class="topbar container">
+                        <div class="logo col-md-8">
+                            <img class="logo__picture" src="/images/logo.png" />
+                            <a class="logo__link" href="#">Knomsy</a>
+                        </div>
+
+                        <div class="usermenu navbar-right col-md-4">
+                            <div class="row">
+                                <div class="usermenu-buttons col-md-7">
+                                    <i class="usermenu-buttons__item fa fa-plus-circle"></i>
+                                    <i class="usermenu-buttons__item fa fa-bell-o"></i>
+                                    <i class="usermenu-buttons__item fa fa-envelope-o"></i>
+                                </div>
+
+                                <div class="usermenu__profile col-md-5">
+                                    <div class="profile">
+                                        <img class="profile__picture" src="images/profile-picture__unknown.png" />
+
+                                        <span class="profile__rating">1,25</span>
+                                        <i class="profile__rating__icon fa fa-arrow-circle-up"></i>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="header__navbar row">
+                    <div class="container">
+                        <div class="col-md-8">
+                            <!-- Menu -->
+<div class="navbar main-navbar">
+    <ul class="nav navbar-nav">
+        <li class="main-navbar__item"><a class="main-navbar__item__link" href="#">Home</a></li>
+        <li class="main-navbar__item"><a class="main-navbar__item__link" href="#">Dashboard</a></li>
+        <li class="main-navbar__item"><a class="main-navbar__item__link" href="#">People</a></li>
+        <li class="main-navbar__item active"><a class="main-navbar__item__link" href="#">Startups</a></li>
+        <li class="main-navbar__item"><a class="main-navbar__item__link" href="#">Location map</a></li>
+    </ul>
+</div>
+                            <!-- Menu end -->
+                        </div>
+                        
+                        <div class="input-group search col-md-4">
+                            <input type="text" class="form-control search__input" placeholder="Search"/>
+                            <span class="input-group-btn">
+                                <button class=" search__btn btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                            </span>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </header>
+            
+            <section class="profilecard row">
+                <div class="profilecard-header">
+                    <div class="container">
+                        <div class="col-md-2 profilecard-header__info">
+                            <img class="header__info__photo" src="/images/profile-picture__big.png" />
+                        </div>
+                        <div class="col-md-6 profilecard_header__title">
+                            <h1 class="header__title">Artur Prokopenko</h1>
+                            <div class="header__edit">
+                                <button type="button" class="edit__button btn btn-primary"><i class="fa fa-pencil"></i> Edit</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4 profilecard_header__contacts">
+                            <div class="row">
+                                <div class="col-sm-3 col-md-4 contacts__rating">
+                                    <span class="rating__value">2,08</span>
+                                    <div class="rating__trend">
+                                        <i class="trend__icon fa fa-arrow-circle-up"> </i>
+                                        <span class="trend__value"> 9.00%</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-md-4 contacts__followers">
+                                    <span class="followers__value">82</span>
+                                    <span class="followers__title">Followers</span>
+                                </div>
+                                <div class="col-sm-3 col-md-4 contacts__following">
+                                    <span class="following__value">142</span>
+                                    <span class="following__title">Following</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="profilecard-content container">
+                    <div class="col-md-2 content__navbar">
+                        <i class="navbar__icon"></i>
+                        <p class="navbar__title"></p>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="content__block">
+                            <h3 class="block__title">Profile info</h3>
+                            <div class="block__section">
+                                <i class="section__icon fa fa-user"></i>
+                                <h4 class="section__text">Your profile info is empty now</h4>
+                                <p class="section__comment">You can use "Edit" button to fill it</p>
+                                <button type="button" class="edit__button btn btn-primary"> Edit</button>
+                            </div>
+                        </div>
+                        
+                        <div class="content__block">
+                            <h3 class="block__title">Investing</h3>
+                            <div class="block__section">
+                                <i class="section__icon fa fa-usd"></i>
+                                <h4 class="section__text">Your investing info is empty now</h4>
+                                <p class="section__comment">You can use "Edit" button to fill it</p>
+                                <button type="button" class="edit__button btn btn-primary"> Edit</button>
+                            </div>
+                        </div>
+                        
+                        <div class="content__block">
+                            <h3 class="block__title">Work experience</h3>
+                            <div class="block__section">
+                                <i class="section__icon fa fa-building-o"></i>
+                                <h4 class="section__text">Your work experience is empty now</h4>
+                                <p class="section__comment">You can use "Edit" button to fill it</p>
+                                <button type="button" class="edit__button btn btn-primary"> Edit</button>
+                            </div>
+                        </div>
+                        
+                        <div class="content__block">
+                            <h3 class="block__title">Media</h3>
+                            <div class="block__section">
+                                <div class="section__layout">
+                                    <i class="section__icon fa  fa-play-circle-o"></i>
+                                    <h4 class="section__text">Your media is empty now</h4>
+                                    <p class="section__comment">You can use "Edit" button to add images and videous</p>
+                                    <button type="button" class="edit__button btn btn-primary"> Edit</button>
+                                </div>
+                                <div class="section_gallery">
+                                    <a href="#"><i class="gallery__controller fa fa-chevron-left"></i></a>
+                                    <div class="gallery__item"></div>
+                                    <div class="gallery__item"></div>
+                                    <div class="gallery__item"></div>
+                                    <a href="#"><i class="gallery__controller fa fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                
+            </section>
+            
+            <footer class="footer row">
+                <div  class="container">
+                    <div class="footer-logo col-md-4">
+                        <img class="footer-logo__picture" src="/images/footer_logo.png" />
+                        <a class="footer-logo__link" href="#">Knomsy</a>
+                        <p class="footer-logo__copyright">Copyright © 2015 Knomsy</p>
+                    </div>
+                    <div class="col-md-5">
+                        <ul class="footer-navbar nav navbar-nav">
+                            <li><a class="footer-navbar__item">Home</a></li>
+                            <li><a class="footer-navbar__item">Dashboard</a></li>
+                            <li><a class="footer-navbar__item">People</a></li>
+                            <li><a class="footer-navbar__item">Startups</a></li>
+                            <li><a class="footer-navbar__item">Location map</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="footer-navbar footer-navbar__contacts nav navbar-nav">
+                            <li><a class="footer-navbar__item">Contact us</a></li>
+                            <li><a class="footer-navbar__item item__icon"><i class="fa fa-facebook-square"></i></a></li>
+                            <li><a class="footer-navbar__item item__icon"><i class="fa fa-twitter-square"></i></a></li>
+                            <li><a class="footer-navbar__item item__icon"><i class="fa fa-linkedin-square"></i></a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+            </footer>
+            
+        </div>
+    </body>
+
+</html>
