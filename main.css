@@ -126,7 +126,7 @@ html {
 }
 
 .profilecard_header__title {
-    padding-left: 0;
+    padding-left: 20px;
     padding-top: 25px;
 }
 
@@ -157,10 +157,13 @@ html {
     padding: 15px;
     margin-top: 25px;
     float: right;
+    position: relative;
 }
 
 .contacts__rating {
     border-right: 2px solid #484E54;
+    position: absolute;
+    min-width: 100px;
 }
 
 .rating__trend {
@@ -181,10 +184,19 @@ html {
 
 .contacts__followers {
     border-right: 2px solid #484E54;
+    position: absolute;
+    left: 100px;
+    min-width: 100px;
 }
 
 .trend__value {
     display: inline-block; 
+}
+
+.contacts__following {
+    position: absolute;
+    left: 200px;
+    min-width: 100px;
 }
 
 .content__block {
@@ -255,16 +267,35 @@ html {
     margin: 0 5px;
 }
 
+/* Content navbar*/
+
+.profilecard-content__navbar {
+    margin-top: 30px;
+    color: #A7AFB9;
+    text-align: center;
+    font-size: 14px;
+}
+
+.content__navbar__active {
+    color: #008ECD;
+}
+
+.navbar__title {
+    background: url(./images/content__navbar__separator.png) center no-repeat;
+    background-position: 50% 90%;
+    padding-bottom: 15px;
+    margin: 0;
+}
+
+.title__last {
+    background: none;
+}
+
 /* Footer*/
 
 .footer {
     background-color: #344459;
     padding: 25px 0
-}
-
-.footer-logo {
-    margin-left: -15px;
-    
 }
 
 .footer-logo__picture {
@@ -294,8 +325,7 @@ html {
 
 .footer-navbar {
     font-size: 18px;
-    margin-left: -30px;
-    
+    padding-right: 0px;
 }
 
 .footer-navbar__item {
@@ -319,5 +349,5 @@ html {
 }
 
 .footer-navbar__contacts {
-    float: right;
+    margin-left: -10px;
 }
