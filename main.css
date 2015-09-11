@@ -106,7 +106,7 @@ html {
     padding-bottom: 80px;
 }
 
-.profilecard-header {
+.profilecard__header {
     background-color: #49515C;
     background: url(./images/profile-header__background.jpg) center no-repeat;
     background-size: cover;
@@ -114,27 +114,35 @@ html {
     padding-top: 40px;
     padding-bottom: 40px;
 }
-
-.profilecard-header__info {
-    
-}
-
-.header__info__photo {
+.header__userpic {
     border-radius: 100%;
     width: 140px;
     
 }
 
-.profilecard_header__title {
+.header__userinfo {
     padding-left: 20px;
     padding-top: 25px;
 }
 
-.header__title {
+.userinfo__name {
     color: #FFFFFF;
     font-size: 20px;
     margin: 0;
     display: inline;
+}
+
+.userinfo__profession {
+    color: #FFFFFF;
+    font-size: 14px;
+    padding-top: 10px;
+    width: 400px;
+}
+
+.userinfo__location {
+    color: #FFFFFF;
+    font-size: 13px;
+    width: 400px;
 }
 
 .header__edit {
@@ -147,22 +155,21 @@ html {
     background-color: #008ED0;
 }
 
-.profilecard_header__contacts {
+.header__contacts {
     background-color: rgba(43,49,55,0.7);
-    min-height: 75px;
+    min-width: 300px;
     width: 300px;
+    height: 75px;
     color: #FFFFFF;
     border-radius: 3px;
     text-align: center;
     padding: 15px;
     margin-top: 25px;
-    float: right;
     position: relative;
 }
 
 .contacts__rating {
-    border-right: 2px solid #484E54;
-    position: absolute;
+    border-right: 2px solid #484E54; 
     min-width: 100px;
 }
 
@@ -184,8 +191,6 @@ html {
 
 .contacts__followers {
     border-right: 2px solid #484E54;
-    position: absolute;
-    left: 100px;
     min-width: 100px;
 }
 
@@ -193,50 +198,72 @@ html {
     display: inline-block; 
 }
 
-.contacts__following {
-    position: absolute;
-    left: 200px;
-    min-width: 100px;
-}
-
-.content__block {
+.content__section {
     margin-right: -15px;
     margin-left: -15px;
 }
 
-.block__title {
+/* Content navbar*/
+
+.content__navbar {
+    margin-top: 30px;
+    color: #A7AFB9;
+    text-align: center;
+    font-size: 14px;
+}
+
+.item_active {
+    color: #008ECD;
+}
+
+.item__title {
+    background: url(./images/content__navbar__separator.png) center no-repeat;
+    background-position: 50% 90%;
+    padding-bottom: 15px;
+    margin: 0;
+}
+
+.title_last {
+    background: none;
+}
+
+.section__title {
     color: #727D90;
     font-size: 20px;
     margin: 30px 0 20px 0;
 }
 
-.block__section {
+.section__body {
     background-color: #FFFFFF;
-    border: 2px dashed #DAE0E6;
     border-radius: 5px;
     text-align: center;
-    padding: 30px 0; 
+    padding: 10px 0 30px 0; 
 }
 
-.section__icon {
+.section__body_empty {
+    border: 2px dashed #DAE0E6;
+}
+
+/* for empty block */
+.empty-body__icon {
     color: #6B798D;
     font-size: 60px;
-    padding-bottom: 20px
+    padding: 20px 0 20px 0;
 }
 
-.section__text {
+.empty-body__text {
     color: #677A8E;
     margin: 0;
     font-size: 16px;
 }
 
-.section__comment {
+.empty-body__comment {
     color: #6C778C;
     padding-top: 5px;
     margin-bottom: 25px;
 }
 
-.section__layout {
+.body__layout {
     background-color: #F1F2F4;
     border: 2px dashed #DAE0E6;
     border-radius: 5px;
@@ -244,7 +271,7 @@ html {
     padding: 60px 0;
 }
 
-.section_gallery {
+.empty-body__gallery {
     margin-top: 20px;
     
 }
@@ -267,28 +294,140 @@ html {
     margin: 0 5px;
 }
 
-/* Content navbar*/
+/* for edit block*/
+.edit-body {
+    padding: 5px 15px;
+}
+.edit-body__form {
+    background-color: #F1F2F4;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px
+}
 
-.profilecard-content__navbar {
-    margin-top: 30px;
-    color: #A7AFB9;
-    text-align: center;
+.form__title {
+    color: #727D90;
+    font-size: 15px;
+    text-align: left;
+    margin: 0;
+    padding-bottom: 15px
+}
+
+.input__form-control {
+    border-right: none;
+}
+
+.input__btn-icon {
+    font-size: 16px;
+    color: #C6D1D9;
+}
+
+.form__label {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.label__item {
+    background-color: #B2BACA;
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.label__icon {
+    padding-left: 5px;
+}
+
+.form__button {
+    text-align: right;
+    padding-top: 10px;
+}
+
+.form__invest-amount {
+    text-align: right;
+    color: #429BD5;
+}
+
+.button_cancel {
+    text-decoration: underline;
+    color: #6C7C8F;
+}
+
+.button_save {
+    background-color: #51D700;
+    width: 90px;
+}
+
+/* Media objects */
+
+.form__objects {
+    border-top: 2px solid #E1E7EC;
+    padding: 20px 0;
+    
+}
+
+.objects__company {
+    padding-bottom: 10px;
+}
+
+.company__image {
+    border-radius: 10px;
+}
+
+.company__name {
+    text-align: left;
+    font-size: 16px;
+    color: #0086CD !important;
+}
+
+.company__description {
+    text-align: left;
+    color: #808B9D;
     font-size: 14px;
-}
-
-.content__navbar__active {
-    color: #008ECD;
-}
-
-.navbar__title {
-    background: url(./images/content__navbar__separator.png) center no-repeat;
-    background-position: 50% 90%;
-    padding-bottom: 15px;
     margin: 0;
 }
 
-.title__last {
-    background: none;
+.company__position {
+    color: #0086CD;
+    text-align: left;
+    display: inline;
+    float: left;
+    font-size: 14px;
+}
+
+.company__period {
+    float: left;
+    padding-left: 10px;
+    color: #9BA6B8;
+    font-size: 14px;
+}
+
+.objects__university {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.university__name {
+    color: #677B8D;
+    font-size: 16px;
+    display: inline;
+}
+
+.university__city {
+    color: #9BA6B8;
+    display: inline;
+    font-size: 16px;
+}
+
+.university__degree {
+    color: #0086CD;
+    margin: 0;
+    font-size: 14px;
+}
+
+.university__period {
+    color: #9BA6B8;
+    font-size: 14px;
 }
 
 /* Footer*/

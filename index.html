@@ -73,18 +73,20 @@
             </header>
             
             <section class="profilecard row">
-                <div class="profilecard-header">
+                <div class="profilecard__header">
                     <div class="container">
-                        <div class="col-md-2 profilecard-header__info">
-                            <img class="header__info__photo" src="./images/profile-picture__big.png" />
+                        <div class="col-md-2">
+                            <img class="header__userpic" src="./images/profile-picture__big.png" />
                         </div>
-                        <div class="col-md-6 profilecard_header__title">
-                            <h1 class="header__title">Artur Prokopenko</h1>
+                        <div class="col-md-6 header__userinfo">
+                            <h1 class="userinfo__name">Artur Prokopenko</h1>
+                            <p class="userinfo__profession">Cofounder &#38; Art Director at Knomsy, UX/UI Designer at OneNear, Droidlabs and Astrall </p>
+                            <p class="userinfo__location"><i class="fa fa-map-marker"></i> Ukraine, Zaporozhye</p>
                             <div class="header__edit">
                                 <button type="button" class="edit__button btn btn-primary"><i class="fa fa-pencil"></i> Edit</button>
                             </div>
                         </div>
-                        <div class="col-md-4 profilecard_header__contacts">
+                        <div class="col-md-4 header__contacts">
                             <div class="row">
                                 <div class="col-sm-3 col-md-4 contacts__rating">
                                     <span class="rating__value">2,08</span>
@@ -106,76 +108,467 @@
                         <div class="clearfix"></div>
                     </div>
                 </div>
-                <div class="profilecard-content container">
-                    <div class="col-md-2 profilecard-content__navbar">
-                        <div class="content__navbar">
-                            <i class="navbar__icon fa fa-circle"></i>
-                            <p class="navbar__title">Profile info</p>
+                
+
+                <div class="profilecard__content container">
+                    <div class="col-md-2 content__navbar">
+                        <div class="navbar__item">
+                            <i class="item__icon fa fa-circle"></i>
+                            <p class="item__title">Profile info</p>
                         </div>
                         
-                        <div class="content__navbar content__navbar__active">
-                            <i class="navbar__icon fa fa-circle"></i>
-                            <p class="navbar__title">Investing</p>
+                        <div class="navbar__item item_active">
+                            <i class="item__icon fa fa-circle"></i>
+                            <p class="item__title">Investing</p>
                         </div>
                         
-                        <div class="content__navbar">
-                            <i class="navbar__icon fa fa-circle"></i>
-                            <p class="navbar__title">Experience</p>
+                        <div class="navbar__item">
+                            <i class="item__icon fa fa-circle"></i>
+                            <p class="item__title">Experience</p>
                         </div>
                         
-                        <div class="content__navbar">
-                            <i class="navbar__icon fa fa-circle"></i>
-                            <p class="navbar__title title__last">Media</p>
+                        <div class="navbar__item">
+                            <i class="item__icon fa fa-circle"></i>
+                            <p class="item__title">Media</p>
                         </div>
+                        
+                        <div class="navbar__item">
+                            <i class="item__icon fa fa-circle"></i>
+                            <p class="item__title">References</p>
+                        </div>
+                        
+                        <div class="navbar__item">
+                            <i class="item__icon fa fa-circle"></i>
+                            <p class="item__title title_last">Widgets</p>
+                        </div>
+                        
+                        
                     </div>
                     
-                    
                     <div class="col-md-10">
-                        <div class="content__block">
-                            <h3 class="block__title">Profile info</h3>
-                            <div class="block__section">
-                                <i class="section__icon fa fa-user"></i>
-                                <h4 class="section__text">Your profile info is empty now</h4>
-                                <p class="section__comment">You can use "Edit" button to fill it</p>
-                                <button type="button" class="edit__button btn btn-primary"> Edit</button>
+                        <div class="content__section">
+                            <h3 class="section__title">Profile info</h3>
+                            
+                            <div class="section__body section__body_empty">
+                                <div class="empty-body">
+                                    <i class="empty-body__icon fa fa-user"></i>
+                                    <h4 class="empty-body__text">Your profile info is empty now</h4>
+                                    <p class="empty-body__comment">You can use "Edit" button to fill it</p>
+                                    <button type="button" class="edit-button btn btn-primary"> Edit</button>
+                                </div>
+                            </div>
+  
+                        </div>
+                        
+                        <div class="content__section">
+                            <h3 class="section__title">Profile info</h3>
+                            <div class="section__body section__body_edit">
+                                <div class="edit-body">
+                                    
+                                    <div class="edit-body__form">
+                                        <h4 class="form__title">About me</h4>
+                                        <textarea class="form__textarea form-control" rows="3" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></textarea>
+                                    </div>
+                                    
+                                    <div class="edit-body__form">
+                                        <h4 class="form__title">What I do</h4>
+                                        <textarea class="form__textarea form-control" rows="3" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></textarea>
+                                    </div>
+                                    
+                                    <div class="edit-body__form">
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <h4 class="form__title">Roles</h4>
+                                                
+                                                <div class="form__label">
+                                                    <span class="label__item label label-default">UX<i class="label__icon fa fa-times"></i></span>   
+                                                    <span class="label__item label label-default">UI<i class="label__icon fa fa-times"></i></span>
+                                                    <span class="label__item label label-default">Mobile Design<i class="label__icon fa fa-times"></i></span>
+                                                    <span class="label__item label label-default">Illustrations<i class="label__icon fa fa-times"></i></span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-5">
+                                                <div class="form__input input-group">
+                                                    <input type="text" class="input__form-control form-control" placeholder="Type here">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-default" type="button"><i class="input__btn-icon fa fa-angle-down"></i></button>
+                                                    </span>
+
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="edit-body__form">
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <h4 class="form__title">Skills</h4>
+                                                
+                                                <div class="form__label">
+                                                    <span class="label__item label label-default">UX<i class="label__icon fa fa-times"></i></span>   
+                                                    <span class="label__item label label-default">UI<i class="label__icon fa fa-times"></i></span>
+                                                    <span class="label__item label label-default">Mobile Design<i class="label__icon fa fa-times"></i></span>
+                                                    <span class="label__item label label-default">Illustrations<i class="label__icon fa fa-times"></i></span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-5">
+                                                <div class="form__input input-group">
+                                                    <input type="text" class="input__form-control form-control" placeholder="Type here">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-default" type="button"><i class="input__btn-icon fa fa-angle-down"></i></button>
+                                                    </span>
+
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="edit-body__form">
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <h4 class="form__title">Services</h4>
+                                                
+                                                <div class="form__label">
+                                                    <span class="label__item label label-default">UX<i class="label__icon fa fa-times"></i></span>   
+                                                    <span class="label__item label label-default">UI<i class="label__icon fa fa-times"></i></span>
+                                                    <span class="label__item label label-default">Mobile Design<i class="label__icon fa fa-times"></i></span>
+                                                    <span class="label__item label label-default">Illustrations<i class="label__icon fa fa-times"></i></span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-5">
+                                                <div class="form__input input-group">
+                                                    <input type="text" class="input__form-control form-control" placeholder="Type here">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-default" type="button"><i class="input__btn-icon fa fa-angle-down"></i></button>
+                                                    </span>
+
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form__button">
+                                        <button type="button" class="button_cancel btn btn-link">Cancel</button>
+                                        <button type="button" class="button_save btn btn-success">Save</button>
+                                    </div>
+                                    
+                                </div>
                             </div>
                         </div>
                         
-                        <div class="content__block">
-                            <h3 class="block__title">Investing</h3>
-                            <div class="block__section">
-                                <i class="section__icon fa fa-usd"></i>
-                                <h4 class="section__text">Your investing info is empty now</h4>
-                                <p class="section__comment">You can use "Edit" button to fill it</p>
-                                <button type="button" class="edit__button btn btn-primary"> Edit</button>
-                            </div>
-                        </div>
                         
-                        <div class="content__block">
-                            <h3 class="block__title">Work experience</h3>
-                            <div class="block__section">
-                                <i class="section__icon fa fa-building-o"></i>
-                                <h4 class="section__text">Your work experience is empty now</h4>
-                                <p class="section__comment">You can use "Edit" button to fill it</p>
-                                <button type="button" class="edit__button btn btn-primary"> Edit</button>
-                            </div>
-                        </div>
-                        
-                        <div class="content__block">
-                            <h3 class="block__title">Media</h3>
-                            <div class="block__section">
-                                <div class="section__layout">
-                                    <i class="section__icon fa  fa-play-circle-o"></i>
-                                    <h4 class="section__text">Your media is empty now</h4>
-                                    <p class="section__comment">You can use "Edit" button to add images and videous</p>
+                        <div class="content__section">
+                            <h3 class="section__title">Investing</h3>
+                            <div class="section__body section__body_empty">
+                                <div class="emptybody">
+                                    <i class="empty-body__icon fa fa-usd"></i>
+                                    <h4 class="empty-body__text">Your investing info is empty now</h4>
+                                    <p class="empty-body__comment">You can use "Edit" button to fill it</p>
                                     <button type="button" class="edit__button btn btn-primary"> Edit</button>
                                 </div>
-                                <div class="section_gallery">
-                                    <a href="#"><i class="gallery__controller fa fa-chevron-left"></i></a>
-                                    <div class="gallery__item"></div>
-                                    <div class="gallery__item"></div>
-                                    <div class="gallery__item"></div>
-                                    <a href="#"><i class="gallery__controller fa fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                        
+                        <div class="content__section">
+                            <h3 class="section__title">Investing</h3>
+                            
+                            <div class="section__body section__body_edit">
+                                <div class="edit-body">
+                                    <div class="edit-body__form">
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <h4 class="form__title">Invests per deal</h4>
+                                            </div>
+                                            
+                                            <div class="col-md-5 form__invest-amount">
+                                                <span>$10K — $50K</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="edit-body__form">
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <h4 class="form__title">Markets</h4>
+                                                
+                                                <div class="form__label">
+                                                    <span class="label__item label label-default">Droids<i class="label__icon fa fa-times"></i></span>   
+                                                    <span class="label__item label label-default">Mobile applications<i class="label__icon fa fa-times"></i></span>
+                                                    
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                            <div class="col-md-5">
+                                                <div class="form__input input-group">
+                                                    <input type="text" class="input__form-control form-control" placeholder="Type here">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-default" type="button"><i class="input__btn-icon fa fa-angle-down"></i></button>
+                                                    </span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="edit-body__form">
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <h4 class="form__title">Countries</h4>
+                                                
+                                                <div class="form__label">
+                                                    <span class="label__item label label-default">USA<i class="label__icon fa fa-times"></i></span>   
+                                                    <span class="label__item label label-default">Canada<i class="label__icon fa fa-times"></i></span>
+                                                    <span class="label__item label label-default">UK<i class="label__icon fa fa-times"></i></span>
+                                                    <span class="label__item label label-default">Russia<i class="label__icon fa fa-times"></i></span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-5">
+                                                <div class="form__input input-group">
+                                                    <input type="text" class="input__form-control form-control" placeholder="Type here">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-default" type="button"><i class="input__btn-icon fa fa-angle-down"></i></button>
+                                                    </span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="edit-body__form">
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <h4 class="form__title">Currency</h4>
+                                                
+                                                <div class="form__label">
+                                                    <span class="label__item label label-default">USA Dollars<i class="label__icon fa fa-times"></i></span>
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                            <div class="col-md-5">
+                                                <div class="form__input input-group">
+                                                    <input type="text" class="input__form-control form-control" placeholder="Type here">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-default" type="button"><i class="input__btn-icon fa fa-angle-down"></i></button>
+                                                    </span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form__button">
+                                        <button type="button" class="button_cancel btn btn-link">Cancel</button>
+                                        <button type="button" class="button_save btn btn-success">Save</button>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="content__section">
+                            <h3 class="section__title">Work experience</h3>
+                            <div class="section__body section__body_empty">
+                                <div class="empty-body">
+                                    <i class="empty-body__icon fa fa-building-o"></i>
+                                    <h4 class="empty-body__text">Your work experience is empty now</h4>
+                                    <p class="empty-body__comment">You can use "Edit" button to fill it</p>
+                                    <button type="button" class="edit__button btn btn-primary"> Edit</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="content__section">
+                            <h3 class="section__title">Work experience</h3>
+                            <div class="section__body section__body_edit">
+                                
+                                <div class="edit-body">
+                                    <div class="edit-body__form">
+                                        <div>
+                                            <h4 class="form__title">Founder</h4>
+                                            <div class="form__objects">
+                                                <div class="row">
+                                                    <div class="col-md-10">
+                                                        <div class="objects__company media">
+                                                            <div class="media-left">
+                                                                <a href="#">
+                                                                    <img class="company__image media-object" src="./images/company__image.png" alt="...">
+                                                                </a>
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <a href="#"><h4 class="company__name media-heading">Dribble</h4></a>
+                                                                <p class="company__description">Company short description</p>
+                                                                <p class="company__position">Art Director</p>
+                                                                <span class="company__period">12 Oct 2014 - 29 Dec 2014</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="col-md-2">
+                                                        <button type="button" class="edit__button btn btn-primary"> Edit</button>
+                                                    </div>
+                                                    
+                                                </div>
+                                                
+                                                <div class="row">
+                                                    <div class="col-md-10">
+                                                        <div class="objects__company media">
+                                                            <div class="media-left">
+                                                                <a href="#">
+                                                                    <img class="company__image media-object" src="./images/company__image.png" alt="...">
+                                                                </a>
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <a href="#"><h4 class="company__name media-heading">Dribble</h4></a>
+                                                                <p class="company__description">Company short description</p>
+                                                                <p class="company__position">Art Director</p>
+                                                                <span class="company__period">12 Oct 2014 - 29 Dec 2014</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="col-md-2">
+                                                        <button type="button" class="edit__button btn btn-primary"> Edit</button>
+                                                    </div>
+                                                    
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                        <div>
+                                            <h4 class="form__title">Investor</h4>
+                                            <div class="form__objects">
+                                                <div class="row">
+                                                    <div class="col-md-10">
+                                                        <div class="objects__company media">
+                                                            <div class="media-left">
+                                                                <a href="#">
+                                                                    <img class="company__image media-object" src="./images/company__image.png" alt="...">
+                                                                </a>
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <a href="#"><h4 class="company__name media-heading">Dribble</h4></a>
+                                                                <p class="company__description">Company short description</p>
+                                                                <p class="company__position">Art Director</p>
+                                                                <span class="company__period">12 Oct 2014 - 29 Dec 2014</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="col-md-2">
+                                                        <button type="button" class="edit__button btn btn-primary"> Edit</button>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div>
+                                            <h4 class="form__title">Employee</h4>
+                                            <div class="form__objects">
+                                                <div class="row">
+                                                    <div class="col-md-10">
+                                                        <div class="objects__company media">
+                                                            <div class="media-left">
+                                                                <a href="#">
+                                                                    <img class="company__image media-object" src="./images/company__image.png" alt="...">
+                                                                </a>
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <a href="#"><h4 class="company__name media-heading">Dribble</h4></a>
+                                                                <p class="company__description">Company short description</p>
+                                                                <p class="company__position">Art Director</p>
+                                                                <span class="company__period">12 Oct 2014 - 29 Dec 2014</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="col-md-2">
+                                                        <button type="button" class="edit__button btn btn-primary"> Edit</button>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div>
+                                            <h4 class="form__title">Education</h4>
+                                            <div class="form__objects">
+                                                <div class="row">
+                                                    <div class="col-md-10">
+                                                        <div class="objects__university media">
+                                                            
+                                                            <div class="media-body">
+                                                                <a href="#"><h4 class="university__name media-heading">MGU</h4></a>
+                                                                <span class="university__city">(Moscow)</span>
+                                                                <p class="university__degree">Bachelors degree, Media</p>
+                                                                <span class="university__period">2012 - 2014</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <button type="button" class="edit__button btn btn-primary"> Edit</button>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="row">
+                                                    <div class="col-md-10">
+                                                        <div class="objects__university media">
+                                                            
+                                                            <div class="media-body">
+                                                                <a href="#"><h4 class="university__name media-heading">MGU</h4></a>
+                                                                <span class="university__city">(Moscow)</span>
+                                                                <p class="university__degree">Bachelors degree, Media</p>
+                                                                <span class="university__period">2012 - 2014</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <button type="button" class="edit__button btn btn-primary"> Edit</button>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form__button">
+                                        <button type="button" class="button_cancel btn btn-link">Cancel</button>
+                                        <button type="button" class="button_save btn btn-success">Save</button>
+                                    </div> 
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="content__section">
+                            <h3 class="section__title">Media</h3>
+                            <div class="section__body section__body_empty">
+                                <div class="empty-body">
+                                    <div class="body__layout">
+                                        <i class="empty-body__icon fa  fa-play-circle-o"></i>
+                                        <h4 class="empty-body__text">Your media is empty now</h4>
+                                        <p class="empty-body__comment">You can use "Edit" button to add images and videous</p>
+                                        <button type="button" class="edit__button btn btn-primary"> Edit</button>
+                                    </div>
+                                    <div class="empty-body__gallery">
+                                        <a href="#"><i class="gallery__controller fa fa-chevron-left"></i></a>
+                                        <div class="gallery__item"></div>
+                                        <div class="gallery__item"></div>
+                                        <div class="gallery__item"></div>
+                                        <a href="#"><i class="gallery__controller fa fa-chevron-right"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
