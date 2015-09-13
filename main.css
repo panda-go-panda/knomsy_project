@@ -116,7 +116,7 @@ html {
 }
 
 .profilecard__header_edit {
-    background-color: #FDFFFF;
+    background-color: #FFFFFF;
     min-height: 200px;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -161,6 +161,7 @@ html {
     color: #FFFFFF;
     padding: 5px 30px;
     background-color: #008ED0;
+    margin-bottom: 10px;
 }
 
 .button_add {
@@ -179,7 +180,7 @@ html {
 
 .button_add-work{
     background-color: #008FD0;
-    margin: 0 0 20px 0;
+    margin: -15px 0 20px 0;
 }
 
 .button__icon{
@@ -276,6 +277,10 @@ html {
     border: 2px dashed #DAE0E6;
 }
 
+.section__body_view-work {
+    padding: 0;
+}
+
 /* for empty block */
 .empty-body__icon {
     color: #6B798D;
@@ -317,13 +322,33 @@ html {
     bottom: 15px;
 }
 
+.gallery__controller_view {
+    color: #2C98D3;
+}
+
 .gallery__item {
     height: 50px;
     width: 70px;
-    border: 2px dashed #DAE0E6;
-    border-radius: 5px;
+    border-radius: 8px;
     display: inline-block;
     margin: 0 5px;
+}
+
+.gallery__item_empty {
+    border: 2px dashed #DAE0E6;
+}
+
+.gallery__item_view {
+    border: 2px solid #DAE0E6;
+}
+
+.gallery__item_active {
+    border: 3px solid #2C98D3;
+}
+
+.gallery__item-name {
+    color: #2C98D3;
+    font-size: 18px;
 }
 
 /* for edit block*/
@@ -332,8 +357,19 @@ html {
 }
 
 .edit-body__btn-group {
+    margin-top: 15px;
+}
+
+.edit-body__btn-group_left {
     text-align: left;
-    
+}
+
+.edit-body__btn-group_center {
+    text-align: center;
+}
+
+.edit-body__btn-group_right {
+    text-align: right;
 }
 
 .btn-group__item {
@@ -345,7 +381,8 @@ html {
     background-color: #F1F2F4;
     padding: 15px;
     margin-bottom: 15px;
-    border-radius: 5px
+    border-radius: 5px;
+    text-align: left;
 }
 
 .form__title {
@@ -353,7 +390,18 @@ html {
     font-size: 15px;
     text-align: left;
     margin: 0;
-    padding-bottom: 15px
+    padding-bottom: 15px;
+    display: inline-block;
+}
+
+.form__title_nopadding {
+    padding-bottom: 0;
+}
+
+.title__subtext {
+    color: #9BA6B8;
+    display: inline;
+    font-size: 16px;
 }
 
 .form__title_center {
@@ -366,6 +414,11 @@ html {
     font-size: 12px;
 }
 
+.form__icon_open-close{
+    font-size: 22px;
+    color: #9BA6B8;
+}
+
 .form__text {
     text-align: left;
     color: #808B9D;
@@ -374,6 +427,63 @@ html {
 .form__input-group {
     border-top: 2px solid #E1E7EC;
     padding: 20px 0;
+}
+
+.input {
+    margin-bottom: 15px
+    
+}
+
+.input__main-title {
+    color: #727D90;
+    font-size: 20px;
+    margin: 30px 0 45px 0;
+}
+
+.input__link {
+    background-size: 15px 15px;
+    padding-left: 30px;
+    color: #2693D2;
+}
+
+.input__link_play-market {
+    background: url(./images/links-icons/Play-market.png) 10px 8px no-repeat;
+}
+
+.input__link_itunes {
+    background: url(./images/links-icons/iTunes.png) 10px 8px no-repeat;
+}
+
+.input__link_dribbble {
+    background: url(./images/links-icons/dribbble.png) 10px 8px no-repeat;
+}
+
+.input__link_facebook {
+    background: url(./images/links-icons/facebook.png) 10px 8px no-repeat;
+}
+
+.input__link_github {
+    background: url(./images/links-icons/github.png) 10px 8px no-repeat;
+}
+
+.input__link_google {
+    background: url(./images/links-icons/google.png) 10px 8px no-repeat;
+}
+
+.input__link_linkedin {
+    background: url(./images/links-icons/linkedin.png) 10px 8px no-repeat;
+}
+
+.input__link_twitter {
+    background: url(./images/links-icons/twitter.png) 10px 8px no-repeat;
+}
+
+.input__link_youtube {
+    background: url(./images/links-icons/youtube.png) 10px 8px no-repeat;
+}
+
+.input__link_website {
+    padding-left: 10px;
 }
 
 .input__form-control {
@@ -397,10 +507,36 @@ html {
     font-size: 14px;
     text-align: left;
     margin: 0;
-    padding-bottom: 5px;
-    padding-top: 10px;
-    
+    padding-bottom: 5px;   
 }
+
+.input__title_inline {
+    display: inline-block;
+    float: left;
+}
+
+
+.textarea__subtext {
+    font-size: 10px;
+    color: #C7CED5;
+}
+
+.input__photo {
+    height: 40px;
+    width: 40px;
+    border: 1px solid #C7CED5;
+    padding: 2px;
+    margin-right: 10px;
+}
+
+.input__photo_circle {
+    border-radius: 100%;
+}
+
+.input__photo_square {
+    border-radius: 8px;
+}
+
 .form__group-objects {
     margin: 10px 0 15px 0;
 }
@@ -445,11 +581,6 @@ html {
     padding-left: 5px;
 }
 
-.form__button {
-    text-align: right;
-    padding-top: 10px;
-}
-
 .form__invest-amount {
     text-align: right;
     color: #429BD5;
@@ -486,9 +617,8 @@ html {
 
 
 .img-group__img {
-    min-width: 70px;
-    min-height: 50px;
-    max-height: 50px;
+    width: 70px;
+    height: 50px;
     overflow: hidden;
     border-radius: 6px;
     
@@ -508,14 +638,15 @@ html {
     margin: 0;
 }
 
-.button_cancel {
+.button_link {
     text-decoration: underline;
     color: #6C7C8F;
 }
 
 .button_save {
     background-color: #51D700;
-    width: 90px;
+    width: 80px;
+    padding: 5px;
 }
 
 /* Media objects */
@@ -527,7 +658,6 @@ html {
 }
 
 .objects__company {
-    padding-bottom: 10px;
 }
 
 .company__image {
@@ -567,18 +697,6 @@ html {
     padding-bottom: 10px;
 }
 
-.university__name {
-    color: #677B8D;
-    font-size: 16px;
-    display: inline;
-}
-
-.university__city {
-    color: #9BA6B8;
-    display: inline;
-    font-size: 16px;
-}
-
 .university__degree {
     color: #0086CD;
     margin: 0;
@@ -595,7 +713,18 @@ html {
     padding: 5px 30px;
 }
 
+.view-body_close {
+    border-bottom: 1px solid #E1E7EC;
+    padding-top: 15px;
+}
+
+.view-body_open {
+    border-bottom: 1px solid #E1E7EC;
+    padding-top: 15px;
+}
+
 .view-body__form {
+    text-align: left;
 }
 
 .view-body__media {
@@ -684,6 +813,17 @@ html {
     color: #727D90;
     font-size: 15px;
     margin: 0;
+}
+
+/* Additional classes */
+
+.column_border-right {
+    border-right: 1px solid #C7CED5
+}
+
+.column_border-bottom {
+    border-bottom: 1px solid #C7CED5;
+    padding-bottom: 20px;
 }
 /* Footer*/
 
