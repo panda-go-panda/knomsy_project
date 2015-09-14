@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
@@ -18,12 +19,12 @@
             <header class="header header_fixed">
                 <div class="header__topbar row">
                     <div class="topbar container">
-                        <div class="logo col-md-6">
+                        <div class="logo col-xs-4 col-sm-3 col-md-3">
                             <img class="logo__picture" src="./images/logo.png" />
                             <a  href="#"><img class="logo__name" src="./images/company-name.png" /></a>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-xs-8 col-sm-9 col-md-9">
                             <ul class="usermenu navbar-right">
                                 <li class="usermenu__item usermenu__item_button"><i class="fa fa-plus-circle"></i></li>
                                 
@@ -42,15 +43,15 @@
                     <div class="container">
                         <div class="col-md-8">
                             <!-- Menu -->
-<div class="navbar main-navbar">
-    <ul class="nav navbar-nav">
-        <li class="main-navbar__item"><a class="main-navbar__item__link" href="#">Home</a></li>
-        <li class="main-navbar__item"><a class="main-navbar__item__link" href="#">Dashboard</a></li>
-        <li class="main-navbar__item"><a class="main-navbar__item__link" href="#">People</a></li>
-        <li class="main-navbar__item active"><a class="main-navbar__item__link" href="#">Startups</a></li>
-        <li class="main-navbar__item"><a class="main-navbar__item__link" href="#">Location map</a></li>
-    </ul>
-</div>
+                            <div class="navbar main-navbar">
+                                <ul class="nav navbar-nav">
+                                    <li class="main-navbar__item"><a class="main-navbar__item__link" href="#">Home</a></li>
+                                    <li class="main-navbar__item"><a class="main-navbar__item__link" href="#">Dashboard</a></li>
+                                    <li class="main-navbar__item"><a class="main-navbar__item__link" href="#">People</a></li>
+                                    <li class="main-navbar__item active"><a class="main-navbar__item__link" href="#">Startups</a></li>
+                                    <li class="main-navbar__item"><a class="main-navbar__item__link" href="#">Location map</a></li>
+                                </ul>
+                            </div>
                             <!-- Menu end -->
                         </div>
                         
@@ -68,32 +69,40 @@
             <section class="profilecard row">
                 <div class="profilecard__header profilecard__header_fixed">
                     <div class="container">
-                        <div class="col-md-2">
-                            <img class="header__userpic" src="./images/profile-picture__big.png" />
-                        </div>
-                        <div class="col-md-6 header__userinfo">
-                            <h1 class="userinfo__name">Artur Prokopenko</h1>
-                            <p class="userinfo__profession">Cofounder &#38; Art Director at Knomsy, UX/UI Designer at OneNear, Droidlabs and Astrall </p>
-                            <p class="userinfo__location"><i class="fa fa-map-marker"></i> Ukraine, Zaporozhye</p>
-                            <div class="header__edit">
-                                <button type="button" class="button_edit btn btn-primary"><i class="fa fa-pencil"></i> Edit</button>
+                        <div class="col-md-8">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="header__userpic media-object" src="./images/profile-picture__big.png">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="userinfo__name media-heading">Artur Prokopenko</h4>
+                                    <p class="userinfo__profession">Cofounder &#38; Art Director at Knomsy, UX/UI Designer at OneNear, Droidlabs and Astrall </p>
+                                    <p class="userinfo__location"><i class="fa fa-map-marker"></i> Ukraine, Zaporozhye</p>
+                                    <div class="header__edit">
+                                        <button type="button" class="button_edit btn btn-primary"><i class="fa fa-pencil"></i> Edit</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+    
+                        
                         <div class="col-md-4 header__contacts">
                             <div class="row">
-                                <div class="col-sm-3 col-md-4 contacts__rating">
+                                <div class="col-xs-4 col-sm-4 col-md-4 contacts__rating">
                                     <span class="rating__value">2,08</span>
                                     <div class="rating__trend">
                                         <i class="trend__icon fa fa-arrow-circle-up"> </i>
                                         <span class="trend__value"> 9.00%</span>
                                     </div>
                                 </div>
-                                <div class="col-sm-3 col-md-4 contacts__followers">
+                                <div class="col-xs-4 col-sm-4 col-md-4 contacts__followers">
                                     <span class="followers__value">82</span><br/>
                                     <span class="followers__title">Followers</span>
                                 </div>
-                                <div class="col-sm-3 col-md-4 contacts__following">
-                                    <span class="following__value">142</span>
+                                <div class="col-xs-4 col-sm-4 col-md-4 contacts__following">
+                                    <span class="following__value">142</span><br/>
                                     <span class="following__title">Following</span>
                                 </div>
                             </div>

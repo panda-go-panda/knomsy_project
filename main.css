@@ -125,29 +125,22 @@ html {
     
 }
 
-.header__userinfo {
-    padding-left: 20px;
-    padding-top: 25px;
-}
+
 
 .userinfo__name {
     color: #FFFFFF;
     font-size: 20px;
-    margin: 0;
-    display: inline;
 }
 
 .userinfo__profession {
     color: #FFFFFF;
     font-size: 14px;
-    padding-top: 10px;
     width: 400px;
 }
 
 .userinfo__location {
     color: #FFFFFF;
     font-size: 13px;
-    width: 400px;
 }
 
 .header__edit {
@@ -209,6 +202,7 @@ html {
     width: 65px;
     height: 25px;
     line-height: 25px;
+    margin: 0 auto;
 }
 
 .trend__icon {
@@ -926,4 +920,10 @@ html {
   .column_border-right {
     border: none;
   }
+}
+
+@media (max-width: 995px) {
+    .header__contacts {
+        width: 100%;
+    }
 }
