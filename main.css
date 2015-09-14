@@ -2,6 +2,10 @@ html {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+.header_fixed {
+
+}
+
 /* Header topbar*/
 .header__topbar {
     padding: 20px 0;
@@ -9,60 +13,48 @@ html {
 }
 
 .logo__picture {
+    height: 35px;
+}
+
+.logo__name {
     height: 34px;
     position: relative;
-    bottom: 5px;
+    bottom: -4px;
+    padding-left: 5px;
     
 }
 
-.logo__link {
-    font-size: 30px;
-    color: #FFFFFF;
-}
-
-.logo__link:hover,
-.logo__link:active,
-.logo__link:focus {
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
 .usermenu {
+    list-style: none;
+    line-height: 35px;
+    margin: 0;
 }
 
-.usermenu-buttons {
-    padding-top: 10px;
-    width: auto;
-}
-
-.usermenu-buttons__item {
-    margin: 0 5px;
-    color: #AFB8C4;
-    font-size: 25px;
+.usermenu__item {
+    display: inline;
     margin: 0 10px;
+    color: #AFB8C4;
 }
 
-.usermenu__profile {
-    padding-top: 5px;
-    width: auto;
-    float: right;
+.usermenu__item_button {
+    font-size: 20px;
+    
 }
 
-.profile__picture {
+.usermenu__item_picture {
     border-radius: 100%;
     height: 36px;
     width: 36px;
 }
 
-.profile__rating {
-    color: #AFB8C4;
+.usermenu__item_rating {
     font-size: 18px;
-    padding-left: 5px;
+    margin: 0;
 }
 
-.profile__rating__icon {
-    color: #AFB8C4;
+.usermenu__item_icon {
     font-size: 18px;
+    margin: 0;
 }
 
 /* Header navbar*/
@@ -113,6 +105,11 @@ html {
     min-height: 200px;
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+.profilecard__header_fixed {
+
+    
 }
 
 .profilecard__header_edit {
@@ -233,11 +230,11 @@ html {
 .content__section {
     margin-right: -15px;
     margin-left: -15px;
+    min-width: 300px;
 }
 
 .content__section_scroll {
-    float: left;
-    width: 71%;
+
 }
 
 /* Content navbar*/
@@ -250,9 +247,7 @@ html {
 }
 
 .content__navbar_fixed {
-    position: fixed;
-    width: 25%;
-    z-index: 3000;
+
 }
 
 
@@ -320,6 +315,12 @@ html {
     padding: 60px 0;
 }
 
+.body__layout_view {
+    border: 2px solid #DAE0E6;
+    background-color: #FFFFFF;
+    min-height: 300px;
+}
+
 .empty-body__gallery {
     margin-top: 20px;
     
@@ -382,6 +383,10 @@ html {
 
 .edit-body__btn-group_right {
     text-align: right;
+}
+
+.edit-body__btn-group_in-title {
+    margin-top: 25px;
 }
 
 .btn-group__item {
@@ -548,6 +553,19 @@ html {
 .input__photo_square {
     border-radius: 8px;
 }
+.input__calendar {
+    margin-top: 20px;
+}
+
+.calendar__text {
+    color: #8992A5;
+    line-height: 34px;
+}
+
+.input__checkbox {
+    color: #8992A5;
+    padding-left: 20px
+}
 
 .form__group-objects {
     margin: 10px 0 15px 0;
@@ -596,6 +614,11 @@ html {
 .form__invest-amount {
     text-align: right;
     color: #429BD5;
+}
+
+.form__invest-slyder {
+    width: 100%;
+    border-bottom: 4px solid #DAE0E7;
 }
 
 .form__img-group {
@@ -899,4 +922,8 @@ html {
 }
 
 /* small screens */
-
+@media (max-width: 995px) {
+  .column_border-right {
+    border: none;
+  }
+}

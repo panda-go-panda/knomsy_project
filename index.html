@@ -15,32 +15,25 @@
 
     <body>
         <div class="container-fluid">
-            <header class="header">
+            <header class="header header_fixed">
                 <div class="header__topbar row">
                     <div class="topbar container">
-                        <div class="logo col-md-8">
+                        <div class="logo col-md-6">
                             <img class="logo__picture" src="./images/logo.png" />
-                            <a class="logo__link" href="#">Knomsy</a>
+                            <a  href="#"><img class="logo__name" src="./images/company-name.png" /></a>
                         </div>
 
-                        <div class="usermenu navbar-right col-md-4">
-                            <div class="row">
-                                <div class="usermenu-buttons col-md-7">
-                                    <i class="usermenu-buttons__item fa fa-plus-circle"></i>
-                                    <i class="usermenu-buttons__item fa fa-bell-o"></i>
-                                    <i class="usermenu-buttons__item fa fa-envelope-o"></i>
-                                </div>
-
-                                <div class="usermenu__profile col-md-5">
-                                    <div class="profile">
-                                        <img class="profile__picture" src="./images/profile-picture__unknown.png" />
-
-                                        <span class="profile__rating">1,25</span>
-                                        <i class="profile__rating__icon fa fa-arrow-circle-up"></i>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
+                        <div class="col-md-6">
+                            <ul class="usermenu navbar-right">
+                                <li class="usermenu__item usermenu__item_button"><i class="fa fa-plus-circle"></i></li>
+                                
+                                <li class="usermenu__item usermenu__item_button"><i class="fa fa-bell-o"></i></li>
+                                <li class="usermenu__item usermenu__item_button"><i class="fa fa-envelope-o"></i></li>
+                                <li class="usermenu__item"><img class="usermenu__item_picture" src="./images/profile-picture__unknown.png" /></li>
+                                <li class="usermenu__item usermenu__item_rating"><span>1,25</span></li>
+                                <li class="usermenu__item usermenu__item_icon"><i class="fa fa-arrow-circle-up"></i></li>
+                            </ul>
+                            
                         </div>
                     </div>
                 </div>
@@ -73,7 +66,7 @@
             </header>
             
             <section class="profilecard row">
-                <div class="profilecard__header">
+                <div class="profilecard__header profilecard__header_fixed">
                     <div class="container">
                         <div class="col-md-2">
                             <img class="header__userpic" src="./images/profile-picture__big.png" />
@@ -110,7 +103,7 @@
                 </div>
                 
                 <div class="profilecard__header_edit">
-                    <div class="row column_border-bottom">
+                    <div class="column_border-bottom">
                         <div class="container">
                             
 
@@ -281,6 +274,10 @@
                         
                         <div class="content__section">
                             <h3 class="section__title">Profile info</h3>
+                            <div class="edit-body__btn-group edit-body__btn-group_in-title pull-right">
+                                <button type="button" class="button_link btn btn-link">Cancel</button>
+                                <button type="button" class="button_save btn btn-success">Save</button>
+                            </div>
                             <div class="section__body section__body_edit">
                                 <div class="edit-body">
                                     
@@ -450,8 +447,11 @@
                         </div>
                         
                         <div class="content__section">
-                            <h3 class="section__title">Investing</h3>
-                            
+                                <h3 class="section__title">Investing</h3>
+                                <div class="edit-body__btn-group edit-body__btn-group_in-title pull-right">
+                                            <button type="button" class="button_link btn btn-link">Cancel</button>
+                                            <button type="button" class="button_save btn btn-success">Save</button>
+                                </div>
                             <div class="section__body section__body_edit">
                                 <div class="edit-body">
                                     <div class="edit-body__form">
@@ -464,6 +464,7 @@
                                                 <span>$10K — $50K</span>
                                             </div>
                                         </div>
+                                        <div class="form__invest-slyder"></div>
                                     </div>
                                     
                                     <div class="edit-body__form">
@@ -627,6 +628,10 @@
                         
                         <div class="content__section">
                             <h3 class="section__title">Work experience</h3>
+                            <div class="edit-body__btn-group edit-body__btn-group_in-title pull-right">
+                                <button type="button" class="button_link btn btn-link">Cancel</button>
+                                <button type="button" class="button_save btn btn-success">Save</button>
+                            </div>
                             <div class="section__body section__body_edit">
                                 
                                 <div class="edit-body">
@@ -639,7 +644,7 @@
                                         <h4 class="form__title">Add Experience</h4>
                                             <div class="form__input-group">
                                                 <div class="row">
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-5">
                                                         <div class="input">
                                                             <h4 class="input__title">Company</h4>
 
@@ -686,10 +691,10 @@
 
 
                                                     </div>
-                                                    <div class="col-md-6">
-                                                        <div class="row">
+                                                    <div class="col-md-7">
+                                                        <div class="row input__calendar">
                                                             <div class="col-sm-1">
-                                                                <p>from</p>
+                                                                <p class="calendar__text">from</p>
                                                             </div>
                                                             <div class="col-sm-4">
                                                                 <div class="form__input input-group">
@@ -720,6 +725,44 @@
                                                             </div>
                                                         </div>
                                                         
+                                                        <div class="row input__calendar">
+                                                            <div class="col-sm-1">
+                                                                <p class="calendar__text">to</p>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="form__input input-group">
+                                                                    <input type="text" class="input__form-control form-control" placeholder="Year">
+                                                                    <span class="input-group-btn">
+                                                                        <button class="btn btn-default" type="button"><i class="input__btn-icon fa fa-angle-down"></i></button>
+                                                                    </span>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="form__input input-group">
+                                                                    <input type="text" class="input__form-control form-control" placeholder="Month">
+                                                                    <span class="input-group-btn">
+                                                                        <button class="btn btn-default" type="button"><i class="input__btn-icon fa fa-angle-down"></i></button>
+                                                                    </span>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <div class="form__input input-group">
+                                                                    <input type="text" class="input__form-control form-control" placeholder="Day">
+                                                                    <span class="input-group-btn">
+                                                                        <button class="btn btn-default" type="button"><i class="input__btn-icon fa fa-angle-down"></i></button>
+                                                                    </span>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="checkbox">
+                                                            <label class="input__checkbox">
+                                                                <input type="checkbox"> Current position
+                                                            </label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1093,6 +1136,10 @@
                         
                         <div class="content__section">
                             <h3 class="section__title">Media</h3>
+                            <div class="edit-body__btn-group edit-body__btn-group_in-title pull-right">
+                                <button type="button" class="button_link btn btn-link">Cancel</button>
+                                <button type="button" class="button_save btn btn-success">Save</button>
+                            </div>
                             <div class="section__body section__body_edit">
                                 <div class="edit-body">
                                     <div class="edit-body__form">
@@ -1168,7 +1215,8 @@
                             <button type="button" class="title__btn_edit btn btn-link"><i class="button__icon fa fa-pencil"></i>Edit</button>
                             <div class="section__body section__body_view">
                                 <div class="view-body">
-                                    <iframe class="view-body__video" width="560" height="315" src="https://www.youtube.com/embed/OINa46HeWg8" frameborder="0" allowfullscreen></iframe>
+                                    <div class="body__layout body__layout_view">
+                                    </div>
                                     
                                     <div class="view-body__gallery">
                                         <h3 class="gallery__item-name">Video name</h3>
