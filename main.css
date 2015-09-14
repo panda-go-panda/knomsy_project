@@ -235,6 +235,11 @@ html {
     margin-left: -15px;
 }
 
+.content__section_scroll {
+    float: left;
+    width: 71%;
+}
+
 /* Content navbar*/
 
 .content__navbar {
@@ -243,6 +248,13 @@ html {
     text-align: center;
     font-size: 14px;
 }
+
+.content__navbar_fixed {
+    position: fixed;
+    width: 25%;
+    z-index: 3000;
+}
+
 
 .item_active {
     color: #008ECD;
@@ -885,3 +897,6 @@ html {
 .footer-navbar__contacts {
     margin-left: -10px;
 }
+
+/* small screens */
+
