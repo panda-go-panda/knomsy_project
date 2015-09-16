@@ -863,9 +863,6 @@ html {
     padding: 25px 0
 }
 
-.footer-logo {
-}
-
 .footer-logo__picture path {
     fill: #6A788C;
 }
@@ -889,7 +886,7 @@ html {
 }
 
 .footer-navbar {
-    font-size: 18px;
+    font-size: 14px;
     padding-right: 0px;
 }
 
@@ -914,7 +911,7 @@ html {
 }
 
 .footer-navbar__contacts {
-    margin-left: -10px;
+    float: right;
 }
 
 /* small screens */
@@ -929,5 +926,3 @@ html {
         width: 100%;
     }
 }
-
-
