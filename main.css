@@ -945,10 +945,7 @@ html {
         width: 30px;
         height: 50px;
     }
-    
-    .footer {
-        text-align: center;
-    }
+
     
 }
 
@@ -963,6 +960,10 @@ html {
     }
     
     .header__logo {
+        text-align: center;
+    }
+        
+    .footer {
         text-align: center;
     }
 }
