@@ -950,6 +950,19 @@ html {
         text-align: center;
     }
     
+}
+
+@media (max-width: 770px) {
     .logo_text {
         margin: 0 auto;
+    }
+    .usermenu {
+        padding: 0;
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    .header__logo {
+        text-align: center;
+    }
 }
