@@ -393,7 +393,7 @@ html {
 }
 
 .edit-body__btn-group_in-title {
-    display: inline;
+    display: inline-block;
     float: right;
     margin-top: 25px;
 }
