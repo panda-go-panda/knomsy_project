@@ -272,7 +272,7 @@ html {
 .section__title {
     color: #727D90;
     font-size: 20px;
-    display: inline-block;
+    display: inline;
 }
 
 .section__body {
@@ -280,7 +280,7 @@ html {
     border-radius: 5px;
     text-align: center;
     padding: 20px 0 20px 0; 
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .section__body_empty {
@@ -378,7 +378,7 @@ html {
 }
 
 .edit-body__btn-group {
-    margin-top: 15px;
+    margin-top: 
 }
 
 .edit-body__btn-group_left {
@@ -394,8 +394,8 @@ html {
 }
 
 .edit-body__btn-group_in-title {
-    display: inline-block;
-    float: right;  
+    display: inline;
+    float: right;
 }
 
 .btn-group__item {
