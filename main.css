@@ -242,6 +242,7 @@ html {
     margin-right: -15px;
     margin-left: -15px;
     min-width: 300px;
+    margin-top: 20px;
 }
 
 /* Content navbar*/
@@ -271,7 +272,6 @@ html {
 .section__title {
     color: #727D90;
     font-size: 20px;
-    margin: 30px 0 20px 0;
     display: inline-block;
 }
 
@@ -280,6 +280,7 @@ html {
     border-radius: 5px;
     text-align: center;
     padding: 20px 0 20px 0; 
+    margin-top: 10px;
 }
 
 .section__body_empty {
@@ -394,8 +395,7 @@ html {
 
 .edit-body__btn-group_in-title {
     display: inline-block;
-    float: right;
-    margin-top: 25px;
+    float: right;  
 }
 
 .btn-group__item {
@@ -436,7 +436,9 @@ html {
 .title__btn_edit {
     text-decoration: underline;
     color: #0093D1;
-    font-size: 12px;
+    font-size: 14px;
+    float: right;
+    margin-top: 15px;
 }
 
 .form__icon_open-close{
