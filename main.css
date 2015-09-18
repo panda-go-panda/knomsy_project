@@ -993,4 +993,8 @@ html {
         padding: 0px 5px;
         margin-bottom: 2px;
     }
+    
+    .header__userpic {
+        width: 80px;
+    }
 }
