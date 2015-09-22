@@ -22,34 +22,34 @@ html {
     vertical-align: middle;
     fill: #FFFFFF;
 }
-.usermenu {
+.user-menu {
     list-style: none;
     line-height: 35px;
     margin: 0;
 }
 
-.usermenu__item {
+.user-menu__item {
     display: inline;
     margin: 0 10px;
     color: #AFB8C4;
 }
 
-.usermenu__item_button {
+.user-menu__item_button {
     font-size: 20px;
 }
 
-.usermenu__item_picture {
+.user-menu__item_picture {
     border-radius: 100%;
     height: 36px;
     width: 36px;
 }
 
-.usermenu__item_rating {
+.user-menu__item_rating {
     font-size: 18px;
     margin: 0;
 }
 
-.usermenu__item_icon {
+.user-menu__item_icon {
     font-size: 18px;
     margin: 0;
 }
@@ -67,14 +67,14 @@ html {
     display: inline-block !important;
 }
 
-.main-navbar__item__link {
+.main-navbar__item_link {
     text-decoration: none;
     color: #8F98A5;
 }
 
-.main-navbar__item__link:hover, 
-.main-navbar__item__link:active,
-.main-navbar__item__link:focus {
+.main-navbar__item_link:hover, 
+.main-navbar__item_link:active,
+.main-navbar__item_link:focus {
     background-color: #273547 !important;
     text-decoration: none;
     color: #8F98A5;
@@ -95,12 +95,12 @@ html {
 
 /* Main content */
 
-.profilecard {
+.profile-card {
     background-color: #F1F2F4;
     padding-bottom: 80px;
 }
 
-.profilecard__header {
+.profile-card__header {
     background-color: #49515C;
     background: url(./images/profile-header__background.jpg) center no-repeat;
     background-size: cover;
@@ -109,7 +109,7 @@ html {
     padding-bottom: 40px;
 }
 
-.profilecard__header_edit {
+.profile-card__header_edit {
     background-color: #FFFFFF;
     min-height: 200px;
     padding-top: 40px;
@@ -121,22 +121,22 @@ html {
     width: 140px;
 }
 
-.userinfo__body {
+.user-info__body {
     padding-left: 30px;
 }
 
-.userinfo__name {
+.user-info__name {
     color: #FFFFFF;
     font-size: 20px;
 }
 
-.userinfo__profession {
+.user-info__profession {
     color: #FFFFFF;
     font-size: 14px;
     max-width: 400px;
 }
 
-.userinfo__location {
+.user-info__location {
     color: #FFFFFF;
     font-size: 13px;
 }
@@ -145,28 +145,21 @@ html {
     padding-top: 15px;
 }
 
-.button_edit {
+.btn_edit {
     color: #FFFFFF;
     padding: 5px 30px;
     background-color: #008ED0;
     margin-bottom: 10px;
 }
 
-.button_add {
-    color: #FFFFFF;
-    padding: 5px 30px;
-    background-color: #69798D;
-    margin: 30px;
-}
-
-.button_grey {
+.btn_grey {
     color: #FFFFFF;
     padding: 5px;
     background-color: #69798D;
     width: 80px;
 }
 
-.button_add-work{
+.btn_add-work{
     background-color: #008FD0;
     margin: -15px 0 20px 0;
 }
@@ -177,7 +170,6 @@ html {
 
 .header__contacts {
     background-color: rgba(0,0,0,0.3);
-    min-width: 300px;
     width: 300px;
     height: 80px;
     color: #FFFFFF;
@@ -204,8 +196,8 @@ html {
 .contacts__links_item {
     background-color: rgba(0,0,0,0.3);
     display: inline;
-    padding: 3px 6px;
-    margin-left: 5px;
+    padding: 4px 8px;
+    margin-left: 12px;
 }
 
 .item__website-icon {
@@ -241,7 +233,6 @@ html {
 .content__section {
     margin-right: -15px;
     margin-left: -15px;
-    min-width: 300px;
     margin-top: 20px;
 }
 
@@ -265,7 +256,7 @@ html {
     margin: 0;
 }
 
-.title_last {
+.item__title_last {
     background: none;
 }
 
@@ -463,7 +454,7 @@ html {
 .input__main-title {
     color: #727D90;
     font-size: 20px;
-    margin: 30px 0 45px 0;
+    margin: 25px 0 47px 0;
 }
 
 .input__link {
@@ -556,7 +547,7 @@ html {
     width: 40px;
     border: 1px solid #C7CED5;
     padding: 2px;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .input__photo_circle {
@@ -629,17 +620,11 @@ html {
     color: #429BD5;
 }
 
-.form__invest-slyder {
-    width: 100%;
-    border-bottom: 4px solid #DAE0E7;
-}
-
 .form__img-group {
     border-top: 2px solid #E1E7EC;
     text-align: left;
     padding-top: 20px;
     margin-top: 20px;
-    
 }
 
 .img-group__item {
@@ -683,12 +668,12 @@ html {
     margin: 0;
 }
 
-.button_link {
+.btn_link {
     text-decoration: underline;
     color: #6C7C8F;
 }
 
-.button_save {
+.btn_save {
     background-color: #51D700;
     width: 80px;
     padding: 5px;
@@ -857,11 +842,11 @@ html {
 
 /* Additional classes */
 
-.column_border-right {
+.profile-card__column_border-right {
     border-right: 1px solid #C7CED5
 }
 
-.column_border-bottom {
+.profile-card__column_border-bottom {
     border-bottom: 1px solid #C7CED5;
     padding-bottom: 20px;
 }
@@ -872,25 +857,25 @@ html {
     padding: 25px 0
 }
 
-.footer-logo {
+.footer__logo {
     color: #6A788C;
     line-height: 32px;
 }
 
-.logo_pic {
+.footer__logo_pic {
     vertical-align: middle;
     height: 25px;
     display: inline-block;
 }
 
-.logo_text {
+.footer__logo_text {
     margin-left: -20px;
     height: 25px;
     display: inline-block;
     vertical-align: middle;
 }
 
-.footer-logo__copyright {
+.footer__logo_copyright {
     color: #69778B;
     display: inline;
     vertical-align: middle;
@@ -898,12 +883,12 @@ html {
 
 }
 
-.footer-navbar {
+.footer__navbar {
     font-size: 14px;
     padding-right: 0px;
 }
 
-.footer-navbar__item {
+.footer__navbar_item {
     padding: 0 10px !important;
     text-decoration: underline;
     color: #B3B8CA;
@@ -911,9 +896,9 @@ html {
     line-height: 32px !important;
 }
 
-.footer-navbar__item:hover, 
-.footer-navbar__item:active,
-.footer-navbar__item:focus {
+.footer__navbar_item:hover, 
+.foote__navbar_item:active,
+.footer__navbar_item:focus {
     color: #008CCE;
     background: none !important;
     text-decoration: underline !important;
@@ -923,13 +908,13 @@ html {
     padding: 0 5px !important;
 }
 
-.footer-navbar__contacts {
+.footer__navbar_contacts {
     float: right;
 }
 
 /* small screens */
 @media (max-width: 995px) {
-    .column_border-right {
+    .profile-card__column_border-right {
         border: none;
     }
     
@@ -939,10 +924,10 @@ html {
 }
 
 @media (max-width: 770px) {
-    .logo_text {
+    .footer__logo_text {
         margin: 0 auto;
     }
-    .usermenu {
+    .user-menu {
         padding: 0;
         text-align: center;
         padding-top: 10px;
@@ -958,6 +943,10 @@ html {
 }
 
 @media (max-width: 400px) {
+    .edit-body {
+        padding: 5px 10px;
+    }
+    
     .gallery__item {
         width: 30px;
         height: 50px;
@@ -969,7 +958,7 @@ html {
     }
     
     .btn-group__item_left {
-        margin-left: -10px;
+        margin-left: -12px;
     }
     
     .btn-group__item_right {

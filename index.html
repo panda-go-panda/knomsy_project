@@ -83,14 +83,14 @@
                         </div>
 
                         <div class="col-xs-12 col-sm-8 col-md-8">
-                            <ul class="usermenu navbar-right">
-                                <li class="usermenu__item usermenu__item_button"><i class="fa fa-plus-circle"></i></li>
+                            <ul class="user-menu navbar-right">
+                                <li class="user-menu__item user-menu__item_button"><i class="fa fa-plus-circle"></i></li>
                                 
-                                <li class="usermenu__item usermenu__item_button"><i class="fa fa-bell-o"></i></li>
-                                <li class="usermenu__item usermenu__item_button"><i class="fa fa-envelope-o"></i></li>
-                                <li class="usermenu__item"><img class="usermenu__item_picture" src="./images/profile-picture__unknown.png" /></li>
-                                <li class="usermenu__item usermenu__item_rating"><span>1,25</span></li>
-                                <li class="usermenu__item usermenu__item_icon"><i class="fa fa-arrow-circle-up"></i></li>
+                                <li class="user-menu__item user-menu__item_button"><i class="fa fa-bell-o"></i></li>
+                                <li class="user-menu__item user-menu__item_button"><i class="fa fa-envelope-o"></i></li>
+                                <li class="user-menu__item"><img class="user-menu__item_picture" src="./images/profile-picture__unknown.png" /></li>
+                                <li class="user-menu__item user-menu__item_rating"><span>1,25</span></li>
+                                <li class="user-menu__item user-menu__item_icon"><i class="fa fa-arrow-circle-up"></i></li>
                             </ul>
                             
                         </div>
@@ -103,11 +103,11 @@
                             <!-- Menu -->
                             <div class="navbar main-navbar">
                                 <ul class="nav navbar-nav">
-                                    <li class="main-navbar__item"><a class="main-navbar__item__link" href="#">Home</a></li>
-                                    <li class="main-navbar__item"><a class="main-navbar__item__link" href="#">Dashboard</a></li>
-                                    <li class="main-navbar__item"><a class="main-navbar__item__link" href="#">People</a></li>
-                                    <li class="main-navbar__item active"><a class="main-navbar__item__link" href="#">Startups</a></li>
-                                    <li class="main-navbar__item"><a class="main-navbar__item__link" href="#">Location map</a></li>
+                                    <li class="main-navbar__item"><a class="main-navbar__item_link" href="#">Home</a></li>
+                                    <li class="main-navbar__item"><a class="main-navbar__item_link" href="#">Dashboard</a></li>
+                                    <li class="main-navbar__item"><a class="main-navbar__item_link" href="#">People</a></li>
+                                    <li class="main-navbar__item active"><a class="main-navbar__item_link" href="#">Startups</a></li>
+                                    <li class="main-navbar__item"><a class="main-navbar__item_link" href="#">Location map</a></li>
                                 </ul>
                             </div>
                             <!-- Menu end -->
@@ -124,8 +124,8 @@
                 </div>
             </header>
             
-            <section class="profilecard row">
-                <div class="profilecard__header">
+            <section class="profile-card row">
+                <div class="profile-card__header">
                     <div class="container">
                         <div class="col-md-8">
                             <div class="media">
@@ -134,12 +134,12 @@
                                         <img class="header__userpic media-object" src="./images/profile-picture__big.png">
                                     </a>
                                 </div>
-                                <div class="userinfo__body media-body">
-                                    <h4 class="userinfo__name media-heading">Artur Prokopenko</h4>
-                                    <p class="userinfo__profession">Cofounder &#38; Art Director at Knomsy, UX/UI Designer at OneNear, Droidlabs and Astrall </p>
-                                    <p class="userinfo__location"><i class="fa fa-map-marker"></i> Ukraine, Zaporozhye</p>
+                                <div class="user-info__body media-body">
+                                    <h4 class="user-info__name media-heading">Artur Prokopenko</h4>
+                                    <p class="user-info__profession">Cofounder &#38; Art Director at Knomsy, UX/UI Designer at OneNear, Droidlabs and Astrall </p>
+                                    <p class="user-info__location"><i class="fa fa-map-marker"></i> Ukraine, Zaporozhye</p>
                                     <div class="header__edit">
-                                        <button type="button" class="button_edit btn btn-primary"><i class="fa fa-pencil"></i> Edit</button>
+                                        <button type="button" class="btn_edit btn btn-primary"><i class="fa fa-pencil"></i> Edit</button>
                                     </div>
                                 </div>
                             </div>
@@ -178,20 +178,20 @@
                     </div>
                 </div>
                 
-                <div class="profilecard__header_edit">
-                    <div class="column_border-bottom">
+                <div class="profile-card__header_edit">
+                    <div class="profile-card__column_border-bottom">
                         <div class="container">
                             
 
-                            <div class="col-md-7 column_border-right">
-                                <div class="edit-body">
+                            <div class="col-xs-12 col-md-7 profile-card__column_border-right">
+                                
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-xs-12 col-md-6">
                                             <div class="input">
                                                 <h4 class="input__title">Photo</h4>
                                                 <img class="input__photo input__photo_circle" src="./images/face.png" />
-                                                <button type="button" class="button_grey btn btn-primary">Upload</button>
-                                                <button type="button" class="button_link btn btn-link">Remove</button>
+                                                <button type="button" class="btn_grey btn btn-primary">Upload</button>
+                                                <button type="button" class="btn_link btn btn-link">Remove</button>
                                             </div>
 
 
@@ -220,13 +220,13 @@
                                                 <input type="text" class="form-control"  placeholder="San Francisco">
                                             </div>
                                     </div>
-                                        <div class="col-md-6">
+                                        <div class="col-xs-12 col-md-6">
 
                                         <div class="input">
                                             <h4 class="input__title">Cover</h4>
                                             <img class="input__photo input__photo_square" src="./images/profile-header__background.jpg" />
-                                            <button type="button" class="button_grey btn btn-primary">Upload</button>
-                                            <button type="button" class="button_link btn btn-link">Remove</button>
+                                            <button type="button" class="btn_grey btn btn-primary">Upload</button>
+                                            <button type="button" class="btn_link btn btn-link">Remove</button>
                                         </div>
 
                                         <div class="input">
@@ -243,47 +243,46 @@
                                     </div>
 
                                     </div>
-                                </div>
+                                
                             </div>
 
-                            <div class="col-md-5">
-                                <div class="edit-body">
-                                    <h3 class="input__main-title">Social Networks &#38 Website</h3>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="input">
-                                                <input type="text" class="input__link input__link_play-market form-control"  placeholder="Play market link">
-                                            </div>
-                                            <div class="input">
-                                                <input type="text" class="input__link input__link_itunes form-control"  placeholder="iTunes link">
-                                            </div>
-                                            <div class="input">
-                                                <input type="text" class="input__link input__link_dribbble form-control"  placeholder="Dribbble link">
-                                            </div>
-                                            <div class="input">
-                                                <input type="text" class="input__link input__link_facebook form-control"  placeholder="Facebook link">
-                                            </div>
-                                            <div class="input">
-                                                <input type="text" class="input__link input__link_github form-control"  placeholder="Github link">
-                                            </div>
+                            <div class="col-xs-12 col-md-5">
+                                
+                                <h3 class="input__main-title">Social Networks &#38 Website</h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="input">
+                                            <input type="text" class="input__link input__link_play-market form-control"  placeholder="Play market link">
                                         </div>
+                                        <div class="input">
+                                            <input type="text" class="input__link input__link_itunes form-control"  placeholder="iTunes link">
+                                        </div>
+                                        <div class="input">
+                                            <input type="text" class="input__link input__link_dribbble form-control"  placeholder="Dribbble link">
+                                        </div>
+                                        <div class="input">
+                                            <input type="text" class="input__link input__link_facebook form-control"  placeholder="Facebook link">
+                                        </div>
+                                        <div class="input">
+                                            <input type="text" class="input__link input__link_github form-control"  placeholder="Github link">
+                                        </div>
+                                    </div>
 
-                                        <div class="col-md-6">
-                                            <div class="input">
-                                                <input type="text" class="input__link input__link_google form-control"  placeholder="Google+ link">
-                                            </div>
-                                            <div class="input">
-                                                <input type="text" class="input__link input__link_linkedin form-control"  placeholder="LinkedIn link">
-                                            </div>
-                                            <div class="input">
-                                                <input type="text" class="input__link input__link_twitter form-control"  placeholder="Twitter link">
-                                            </div>
-                                            <div class="input">
-                                                <input type="text" class="input__link input__link_youtube form-control"  placeholder="Youtube link">
-                                            </div>
-                                            <div class="input">
-                                                <input type="text" class="input__link input__link_website form-control"  placeholder="Website link">
-                                            </div>
+                                    <div class="col-md-6">
+                                        <div class="input">
+                                            <input type="text" class="input__link input__link_google form-control"  placeholder="Google+ link">
+                                        </div>
+                                        <div class="input">
+                                            <input type="text" class="input__link input__link_linkedin form-control"  placeholder="LinkedIn link">
+                                        </div>
+                                        <div class="input">
+                                            <input type="text" class="input__link input__link_twitter form-control"  placeholder="Twitter link">
+                                        </div>
+                                        <div class="input">
+                                            <input type="text" class="input__link input__link_youtube form-control"  placeholder="Youtube link">
+                                        </div>
+                                        <div class="input">
+                                            <input type="text" class="input__link input__link_website form-control"  placeholder="Website link">
                                         </div>
                                     </div>
                                 </div>
@@ -292,13 +291,13 @@
                     </div>
                     
                     <div class="edit-body__btn-group edit-body__btn-group_center">
-                        <button type="button" class="button_save btn btn-success">Save</button>
-                        <button type="button" class="button_link btn btn-link">Cancel</button>
+                        <button type="button" class="btn_save btn btn-success">Save</button>
+                        <button type="button" class="btn_link btn btn-link">Cancel</button>
                         
                     </div> 
                 </div>
 
-                <div class="profilecard__content container">
+                <div class="profile-card__content container">
                     <div class="hidden-xs hidden-sm col-md-2 content__navbar content__navbar_fixed">
                         <div class="navbar__item">
                             <i class="item__icon fa fa-circle"></i>
@@ -327,7 +326,7 @@
                         
                         <div class="navbar__item">
                             <i class="item__icon fa fa-circle"></i>
-                            <p class="item__title title_last">Widgets</p>
+                            <p class="item__title item__title_last">Widgets</p>
                         </div>
                         
                         
@@ -351,8 +350,8 @@
                         <div class="content__section">
                             <h3 class="section__title">Profile info</h3>
                             <div class="edit-body__btn-group edit-body__btn-group_in-title">
-                                <button type="button" class="btn-group__item_left button_link btn btn-link">Cancel</button>
-                                <button type="button" class="btn-group__item_right button_save btn btn-success">Save</button>
+                                <button type="button" class="btn-group__item_left btn_link btn btn-link">Cancel</button>
+                                <button type="button" class="btn-group__item_right btn_save btn btn-success">Save</button>
                             </div>
                             <div class="section__body section__body_edit">
                                 <div class="edit-body">
@@ -446,8 +445,8 @@
                                     </div>
                                     
                                     <div class="edit-body__btn-group edit-body__btn-group_right">
-                                        <button type="button" class="btn-group__item_left button_link btn btn-link">Cancel</button>
-                                        <button type="button" class="btn-group__item_right button_save btn btn-success">Save</button>
+                                        <button type="button" class="btn-group__item_left btn_link btn btn-link">Cancel</button>
+                                        <button type="button" class="btn-group__item_right btn_save btn btn-success">Save</button>
                                     </div>
                                     
                                 </div>
@@ -517,7 +516,7 @@
                                     <i class="empty-body__icon fa fa-usd"></i>
                                     <h4 class="empty-body__text">Your investing info is empty now</h4>
                                     <p class="empty-body__comment">You can use "Edit" button to fill it</p>
-                                    <button type="button" class="button_edit btn btn-primary"> Edit</button>
+                                    <button type="button" class="btn btn-primary btn_edit"> Edit</button>
                                 </div>
                             </div>
                         </div>
@@ -525,8 +524,8 @@
                         <div class="content__section">
                                 <h3 class="section__title">Investing</h3>
                                 <div class="edit-body__btn-group edit-body__btn-group_in-title">
-                                            <button type="button" class="btn-group__item_left button_link btn btn-link">Cancel</button>
-                                            <button type="button" class="btn-group__item_right button_save btn btn-success">Save</button>
+                                            <button type="button" class="btn-group__item_left btn_link btn btn-link">Cancel</button>
+                                            <button type="button" class="btn-group__item_right btn_save btn btn-success">Save</button>
                                 </div>
                             <div class="section__body section__body_edit">
                                 <div class="edit-body">
@@ -540,7 +539,8 @@
                                                 <span>$10K — $50K</span>
                                             </div>
                                         </div>
-                                        <div class="form__invest-slyder"></div>
+                                        
+                                        <input type="text" class="form-control"  placeholder="">
                                     </div>
                                     
                                     <div class="edit-body__form">
@@ -617,8 +617,8 @@
                                     </div>
                                     
                                     <div class="edit-body__btn-group edit-body__btn-group_right">
-                                        <button type="button" class="btn-group__item_left button_link btn btn-link">Cancel</button>
-                                        <button type="button" class="btn-group__item_right button_save btn btn-success">Save</button>
+                                        <button type="button" class="btn-group__item_left btn_link btn btn-link">Cancel</button>
+                                        <button type="button" class="btn-group__item_right btn_save btn btn-success">Save</button>
                                     </div>
                                     
                                 </div>
@@ -697,7 +697,7 @@
                                     <i class="empty-body__icon fa fa-building-o"></i>
                                     <h4 class="empty-body__text">Your work experience is empty now</h4>
                                     <p class="empty-body__comment">You can use "Edit" button to fill it</p>
-                                    <button type="button" class="button_edit btn btn-primary"> Edit</button>
+                                    <button type="button" class="btn_edit btn btn-primary"> Edit</button>
                                 </div>
                             </div>
                         </div>
@@ -705,14 +705,14 @@
                         <div class="content__section">
                             <h3 class="section__title">Work experience</h3>
                             <div class="edit-body__btn-group edit-body__btn-group_in-title">
-                                <button type="button" class="btn-group__item_left button_link btn btn-link">Cancel</button>
-                                <button type="button" class="btn-group__item_right button_save btn btn-success">Save</button>
+                                <button type="button" class="btn-group__item_left btn_link btn btn-link">Cancel</button>
+                                <button type="button" class="btn-group__item_right btn_save btn btn-success">Save</button>
                             </div>
                             <div class="section__body section__body_edit">
                                 
                                 <div class="edit-body">
                                     <div class="edit-body__btn-group edit-body__btn-group_left">
-                                        <button type="button" class="button_add-work btn btn-primary"><i class="button__icon fa fa-plus-circle"></i>Add New</button>
+                                        <button type="button" class="btn_add-work btn btn-primary"><i class="button__icon fa fa-plus-circle"></i>Add New</button>
                                     </div>
                                     
                                     
@@ -843,9 +843,9 @@
                                                 </div>
                                             </div>
                                         <div class="edit-body__btn-group edit-body__btn-group_left">
-                                            <button type="button" class="btn-group__item button_save btn btn-success">Save</button>
-                                            <button type="button" class="btn-group__item button_grey btn btn-primary">Cancel</button>
-                                            <button type="button" class="btn-group__item button_grey btn btn-primary">Delete</button>
+                                            <button type="button" class="btn-group__item btn_save btn btn-success">Save</button>
+                                            <button type="button" class="btn-group__item btn_grey btn btn-primary">Cancel</button>
+                                            <button type="button" class="btn-group__item btn_grey btn btn-primary">Delete</button>
                                         </div>
                                     </div>
                                     
@@ -871,7 +871,7 @@
                                                     </div>
                                                     
                                                     <div class="col-md-2">
-                                                        <button type="button" class="button_edit btn btn-primary"> Edit</button>
+                                                        <button type="button" class="btn_edit btn btn-primary"> Edit</button>
                                                     </div>
                                                     
                                                 </div>
@@ -894,7 +894,7 @@
                                                     </div>
                                                     
                                                     <div class="col-md-2">
-                                                        <button type="button" class="button_edit btn btn-primary"> Edit</button>
+                                                        <button type="button" class="btn_edit btn btn-primary"> Edit</button>
                                                     </div>
                                                     
                                                 </div>
@@ -923,7 +923,7 @@
                                                     </div>
                                                     
                                                     <div class="col-md-2">
-                                                        <button type="button" class="button_edit btn btn-primary"> Edit</button>
+                                                        <button type="button" class="btn_edit btn btn-primary"> Edit</button>
                                                     </div>
                                                     
                                                 </div>
@@ -951,7 +951,7 @@
                                                     </div>
                                                     
                                                     <div class="col-md-2">
-                                                        <button type="button" class="button_edit btn btn-primary"> Edit</button>
+                                                        <button type="button" class="btn_edit btn btn-primary"> Edit</button>
                                                     </div>
                                                     
                                                 </div>
@@ -974,7 +974,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-md-2">
-                                                        <button type="button" class="button_edit btn btn-primary"> Edit</button>
+                                                        <button type="button" class="btn_edit btn btn-primary"> Edit</button>
                                                     </div>
                                                 </div>
                                                 
@@ -991,7 +991,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-md-2">
-                                                        <button type="button" class="button_edit btn btn-primary"> Edit</button>
+                                                        <button type="button" class="btn_edit btn btn-primary"> Edit</button>
                                                     </div>
                                                 </div>
                                                 
@@ -1000,8 +1000,8 @@
                                     </div>
                                     
                                     <div class="edit-body__btn-group edit-body__btn-group_right">
-                                        <button type="button" class="btn-group__item_left button_link btn btn-link">Cancel</button>
-                                        <button type="button" class="btn-group__item_right button_save btn btn-success">Save</button>
+                                        <button type="button" class="btn-group__item_left btn_link btn btn-link">Cancel</button>
+                                        <button type="button" class="btn-group__item_right btn_save btn btn-success">Save</button>
                                     </div> 
                                     
                                 </div>
@@ -1197,7 +1197,7 @@
                                         <i class="empty-body__icon fa  fa-play-circle-o"></i>
                                         <h4 class="empty-body__text">Your media is empty now</h4>
                                         <p class="empty-body__comment">You can use "Edit" button to add images and videous</p>
-                                        <button type="button" class="button_edit btn btn-primary"> Edit</button>
+                                        <button type="button" class="btn_edit btn btn-primary"> Edit</button>
                                     </div>
                                     <div class="empty-body__gallery">
                                         <a href="#"><i class="gallery__controller fa fa-chevron-left"></i></a>
@@ -1213,8 +1213,8 @@
                         <div class="content__section">
                             <h3 class="section__title">Media</h3>
                             <div class="edit-body__btn-group edit-body__btn-group_in-title">
-                                <button type="button" class="btn-group__item_left button_link btn btn-link">Cancel</button>
-                                <button type="button" class="btn-group__item_right button_save btn btn-success">Save</button>
+                                <button type="button" class="btn-group__item_left btn_link btn btn-link">Cancel</button>
+                                <button type="button" class="btn-group__item_right btn_save btn btn-success">Save</button>
                             </div>
                             <div class="section__body section__body_edit">
                                 <div class="edit-body">
@@ -1224,7 +1224,7 @@
                                                 <h4 class="form__title">Images</h4>
                                             </div>
                                             <div class="col-md-2">
-                                                <button type="button" class="button_grey btn btn-primary">Upload</button>
+                                                <button type="button" class="btn_grey btn btn-primary">Upload</button>
                                             </div>
                                         </div>
                                         
@@ -1254,7 +1254,7 @@
                                                 <h4 class="form__title">Videos</h4>
                                             </div>
                                             <div class="col-md-2">
-                                                <button type="button" class="button_grey btn btn-primary">Add field</button>
+                                                <button type="button" class="btn_grey btn btn-primary">Add field</button>
                                             </div>
                                         </div>
                                         
@@ -1277,8 +1277,8 @@
                                     </div>
                                     
                                     <div class="edit-body__btn-group edit-body__btn-group_right">
-                                        <button type="button" class="btn-group__item_left button_link btn btn-link">Cancel</button>
-                                        <button type="button" class="btn-group__item_right button_save btn btn-success">Save</button>
+                                        <button type="button" class="btn-group__item_left btn_link btn btn-link">Cancel</button>
+                                        <button type="button" class="btn-group__item_right btn_save btn btn-success">Save</button>
                                     </div> 
                                     
                                 </div>
@@ -1343,9 +1343,9 @@
             
             <footer class="footer row">
                 <div  class="container">
-                    <div class="footer-logo col-xs-4 col-sm-4 col-md-4">
+                    <div class="footer__logo col-xs-4 col-sm-4 col-md-4">
 
-<svg version="1.1" class="logo_pic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 12 100 50">
+<svg version="1.1" class="footer__logo_pic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 12 100 50">
     <g>
 	
 	<path d="M34.789,49.532c-1.121,0-2.03-0.909-2.03-2.029c0-1.121,0.909-2.029,2.03-2.029
@@ -1368,7 +1368,7 @@
     </g>
 </svg>
 
-<svg version="1.1" class="logo_text" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 62 100 30">
+<svg version="1.1" class="footer__logo_text" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 62 100 30">
     <g>
 	<path d="M27.885,65.984c-1.212,2.236-2.873,4.997-4.98,8.283c1.066,2.176,2.67,5.176,4.812,9l-4.102,0.051
 					c-0.792-1.988-1.961-4.489-3.509-7.502v6.836l-3.084,0.052c0.06-4.541,0.09-10.251,0.09-17.13l3.226-0.256l-0.052,8.001
@@ -1410,23 +1410,23 @@
     </g>
 </svg>
 
-                        <p class="footer-logo__copyright">Copyright © 2015 Knomsy</p>
+                        <p class="footer__logo_copyright">Copyright © 2015 Knomsy</p>
                     </div>
                     <div class="col-xs-4 col-sm-6 col-md-6">
-                        <ul class="footer-navbar nav navbar-nav">
-                            <li><a class="footer-navbar__item">Home</a></li>
-                            <li><a class="footer-navbar__item">Dashboard</a></li>
-                            <li><a class="footer-navbar__item">People</a></li>
-                            <li><a class="footer-navbar__item">Startups</a></li>
-                            <li><a class="footer-navbar__item">Location map</a></li>
+                        <ul class="footer__navbar nav navbar-nav">
+                            <li><a class="footer__navbar_item">Home</a></li>
+                            <li><a class="footer__navbar_item">Dashboard</a></li>
+                            <li><a class="footer__navbar_item">People</a></li>
+                            <li><a class="footer__navbar_item">Startups</a></li>
+                            <li><a class="footer__navbar_item">Location map</a></li>
                         </ul>
                     </div>
-                    <div class="footer-navbar col-xs-3 col-sm-2 col-md-2">
-                        <ul class=" footer-navbar__contacts nav navbar-nav">
-                            <li><a class="footer-navbar__item">Contact us</a></li>
-                            <li><a class="footer-navbar__item item__icon"><i class="fa fa-facebook-square"></i></a></li>
-                            <li><a class="footer-navbar__item item__icon"><i class="fa fa-twitter-square"></i></a></li>
-                            <li><a class="footer-navbar__item item__icon"><i class="fa fa-linkedin-square"></i></a></li>
+                    <div class="footer__navbar col-xs-3 col-sm-2 col-md-2">
+                        <ul class=" footer__navbar_contacts nav navbar-nav">
+                            <li><a class="footer__navbar_item">Contact us</a></li>
+                            <li><a class="footer__navbar_item item__icon"><i class="fa fa-facebook-square"></i></a></li>
+                            <li><a class="footer__navbar_item item__icon"><i class="fa fa-twitter-square"></i></a></li>
+                            <li><a class="footer__navbar_item item__icon"><i class="fa fa-linkedin-square"></i></a></li>
                             
                         </ul>
                     </div>
