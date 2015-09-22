@@ -986,4 +986,12 @@ html {
     .header__userpic {
         width: 80px;
     }
+    
+    .contacts__followers {
+        min-width: none;
+    }
+    
+    .contacts__rating {
+        min-width: none;
+    }
 }
