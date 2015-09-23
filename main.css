@@ -920,6 +920,8 @@ html {
     
     .header__contacts {
         width: 100%;
+        font-size: 13px;
+        line-height: 22px;
     }
 }
 
