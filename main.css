@@ -990,10 +990,10 @@ html {
     }
     
     .contacts__followers {
-        min-width: none;
+        min-width: 30px;
     }
     
     .contacts__rating {
-        min-width: none;
+        min-width: 30px;
     }
 }
